@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movistar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top-bar">
+            <div class="nav-left">
+                <span><i class="fas fa-users"></i> Personas</span>
+                <span><i class="fas fa-briefcase"></i> Movistar Empresas</span>
+                <span><i class="fas fa-balance-scale"></i> Centro de Transparencia</span>
+            </div>
+            <div class="nav-right">
+                <span><i class="fas fa-store"></i> Megatienda</span>
+                <span><i class="fas fa-mobile-alt"></i> Servicios Móviles</span>
+                <span><i class="fas fa-headset"></i> Atención al cliente</span>
+                <span><i class="fas fa-blog"></i> Blog</span>
+                <div class="user-options">
+                    <i class="fas fa-user-circle"></i> Mi Movistar
+                    <span class="notifications"><i class="fas fa-bell"></i> 3</span>
+                    <span class="messages"><i class="fas fa-envelope"></i> 4</span>
+                </div>
+            </div>
+        </div>
+        <div class="promo-bar">
+            <span>¡QUEDA POCO TIEMPO! COMPRA TU CELU HOY EN EL TRASNOCHÓN <i class="fas fa-star"></i> <i class="fas fa-moon"></i></span>
+            <div class="countdown">
+                <div class="time-box">
+                    <span class="time">01</span>
+                    <span class="label">DÍAS</span>
+                </div>
+                <div class="time-box">
+                    <span class="time">06</span>
+                    <span class="label">HORAS</span>
+                </div>
+                <div class="time-box">
+                    <span class="time">31</span>
+                    <span class="label">MINUTOS</span>
+                </div>
+                <div class="time-box">
+                    <span class="time">08</span>
+                    <span class="label">SEGUNDOS</span>
+                </div>
+            </div>
+            <button class="cta-button">¡Lo quiero!</button>
+        </div>
+
+
+        <div class="promo-section">
+            <img src="Imagen1.png" alt="Cámbiate a Movistar" class="promo-img"> 
+            <div class="promo-text">
+                <span class="main-text">¡Cámbiate a Movistar!</span>
+                <div class="input-box">
+                    <input type="text" placeholder="Número de celular" />
+                    <button>Ver oferta</button>
+                </div>
+                <div class="privacy">
+                    <input type="checkbox" id="privacy" />
+                    <label for="privacy">He leído y entiendo la Política de privacidad y cookies</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-content">
+        <h1>¡Conoce la Megatienda Online de Movistar!</h1>
+        <div class="product-cards">
+            <!-- Sample card -->
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="Samsung Galaxy">
+                <h3>Samsung Galaxy</h3>
+                <p>$108.00</p>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="iPhone 14 Pro">
+                <h3>iPhone 14 Pro</h3>
+                <p>$98.01</p>
+            </div>
+            <!-- Add more cards similarly -->
+        </div>
+        
+        <h2>Cámbiate a un plan controlado Movistar prime</h2>
+        <div class="plans">
+            <!-- Sample plan -->
+            <div class="plan">
+                <h3>Plan Prime 23 GB</h3>
+                <p>$13.70 al mes</p>
+                <button>Contratar</button>
+            </div>
+            <div class="plan">
+                <h3>Plan Prime 33 GB</h3>
+                <p>$14.71 al mes</p>
+                <button>Contratar</button>
+            </div>
+            <!-- Add more plans similarly -->
+        </div>
+    </section>
+    <div class="footer">
+    
+ 
+        <a href="#" class="terms-link">Términos y Condiciones</a>
+        
+            
+        
+            
+        <div class="footer-columns">
+                
+               
+        
+          
+        <div class="footer-column">
+                    
+                  
+        <h3>Equipos</h3>
+                    
+              
+        
+          
+        <ul>
+                        
+               
+        
+           
+        <li><a href="#">Celulares Movistar</a></li>
+                        
+                        
+        
+                 
+        
+             
+        <li><a href="#">Teléfonos Apple</a></li>
+                          
+        
+           
+        <li><a href="#">Teléfonos Samsung</a></li>
+                        
+                      
+        
+                 
+        <li><a href="#">Teléfonos Honor</a></li>
+                    
+ 
+             
+        </ul>
+
+        
+          
+        <h3>Prepago</h3>
+                    
+                   
+        
+         
+        <ul>
+                        
+                      
+        
+                  
+        <li><a href="#">Cámbiate a Movistar</a></li>
+                        
+                        
+        
+                    
+        
+                
+        
+           
+        <li><a href="#">Combos Prepago</a></li>
+                        
+                      
+        
+                 
+        
+            
+        <li><a href="#">Recargas Online</a></li>
+                    
+               
+        
+          
+        </ul>
+    
+        </div>
+                
+              
+        
+         
+        <div class="footer-column">
+                    
+                   
+        
+         
+        <h3>Planes</h3>
+                    
+                   
+        
+               
+        
+           
+        <ul>
+                        
+           
+        <li><a href="#">Cámbiate a un plan Movistar</a></li>
+   
+        <li><a href="#">Planes Pospago</a></li>
+                    
+ 
+        </ul>
+                    
+   
+        <h3>Enlaces de interés</h3>
+                            
+
+        <li><a href="#">Arcotel</a></li>
+   
+        <li><a href="#">Portabilidad</a></li>
+                        
+       
+        <li><a href="#">Medidor de velocidad</a></li>
+      
+        <li><a href="#">Ofertas movistar</a></li>
+                        
+
+        <li><a href="#">Quieres ser distribuidor</a></li>
+ 
+        </ul>
+                
+           
+        </div>
+                
+             
+        <div class="footer-column">
+                    
+                   
+        
+              
+        
+         
+        <h3>Sobre nosotros</h3>
+                    
+                    
+        
+                
+        <ul>
+                        
+                  
+        
+             
+        <li><a href="#">Telefónica Ecuador</a></li>
+                        
+                    
+        
+               
+        
+          
+        <li><a href="#">Telefónica Global</a></li>
+                        
+                     
+        
+               
+        <li><a href="#">Fundación Telefónica</a></li>
+                        
+                      
+        
+         
+        <li><a href="#">Soluciones para empresas</a></li>
+                        
+                       
+        <li><a href="#">Mapa de cobertura</a></li>
+                        
+                      
+        
+                
+        
+          
+        <li><a href="#">Transparencia Movistar</a></li>
+                        
+   
+           
+        <li><a href="#">Trabaja con nosotros</a></li>
+                         
+  
+        <li><a href="#">Ecotarif</a></li>
+                        
+        
+                      
+        
+              
+        
+          
+        <li><a href="#">Dialogando</a></li>
+                        
+                  
+        
+            
+        <li><a href="#">Ejercicio de derechos</a></li>
+                    
+              
+        
+           
+        </ul>
+        </div>
+            
+        <div class="footer-column">
+                    <h3>Mi Movistar</h3>
+                    <ul>
+       
+        <li><a href="#">Consulta mi factura</a></li>
+
+        </ul>
+
+        <h3>911</h3>
+       
+        <ul>
+     
+                
+        <li><a href="#">Usa bien el 911</a></li>
+                        
+                
+        <li><a href="#">Consulta el estado de tu línea</a></li>
+                    
+                 
+        </ul>
+                
+                
+        </div>
+                
+         
+        <div class="footer-column">
+                    
+               
+        <h3>Avisos legales</h3>
+                    <ul>
+                        
+                
+        
+          
+        <li><a href="#">Centro de Transparencia</a></li>
+                        
+                
+        <li><a href="#">Índices de Calidad</a></li>
+                        
+                    
+        
+              
+        <li><a href="#">Consulta de avisos legales</a></li>
+                    
+        
+               
+        </ul>
+                
+              
+        </div>
+            
+        <div class="footer-bottom">
+ 
+          
+        &copy; 2024 Movistar. Todos los derechos reservados.
+            
+        </div>
+</body>
+</html>
+
